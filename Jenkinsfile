@@ -5,7 +5,7 @@ pipeline {
 
   stage('Clone Repo') {
    steps {
-    git 'https://github.com/ManojKumar8244/devops-ci-cd-pipeline.git'
+    git branch: 'main', url: 'https://github.com/ManojKumar8244/devops-ci-cd-pipeline.git'
    }
   }
 
